@@ -431,7 +431,7 @@ class Visualizer:
             assigned_colors=colors,
             alpha=alpha,
         )
-        return self.output
+        return self.output, boxes, labels
 
     def draw_sem_seg(self, sem_seg, area_threshold=None, alpha=0.8):
         """
